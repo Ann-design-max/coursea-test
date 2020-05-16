@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+
+}
+
+.wrapper h1{
+    text-align: center;
+    font-size: 175%;
+    font-weight: 700;
+    margin: 2em auto;
+}
+
+.card1, .card2, .card3{
+    width: 30%;
+    float: left;
+    border: .3em solid black;
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+.card1 h2{
+    background-color:#f4e022;
+}
+
+.card2 h2{
+    background-color:#5a37c3;
+}
+
+.card3 h2{
+    background-color:#de1b4a;
+}
+
+.card1 h2, .card2 h2, .card3 h2{
+    border: .1em solid #18224B;
+    color: white;
+    font-size: 125%;
+    font-weight: 700;
+    text-align: center;
+    padding: .5em 0 .5em 0;
+    margin-bottom: 1em;
+    width: 8em;
+    float: right;
+}
+
+.card1 p, .card2 p, .card3 p{
+    font-size: 100%;
+    font-weight: 400;
+    line-height: 130%;
+    margin: 1em 2em 1em 2em; 
+    clear: both;
+  
+}
+
+@media (max-width: 993px){
+    .card1, .card2, .card3{
+        width: 10%;
+        float: left;
+    }
+}
+
+@media (max-width: 991px){
+    .card3{
+        clear: both;
+        width: 98%;
+        margin-right: 1em;
+        margin-left: .5em;
+    }
+    .card2{
+        float: right;
+    }
+    .card1, .card2{
+        width: 45%;
+        margin-right: 1em;
+        margin-left: .5em;
+    }
+}
+
+@media (max-width: 767px){
+    .card1, .card2, .card3{
+        clear: both;
+        width: 100%;
+        margin: 1em auto;
+    }
+}
